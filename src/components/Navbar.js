@@ -11,10 +11,10 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 
-function NavBar() {
+function NavBar({location}) {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-
+  console.log(location)
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
@@ -26,6 +26,7 @@ function NavBar() {
   window.addEventListener("scroll", scrollHandler);
 
   return (
+   
     <Navbar
       expanded={expand}
       fixed="top"
@@ -40,7 +41,7 @@ function NavBar() {
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
-            updateExpanded(expand ? false : "expanded");
+            updateExpanded(expand ? false : true);
           }}
         >
           <span></span>
@@ -50,7 +51,7 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/" className={location === "/" ? "active" : ""}  onClick={() => updateExpanded(false)}>
                 <img src={homeIcon} alt="homeIcon"/> Home
               </Nav.Link>
             </Nav.Item>
@@ -60,6 +61,7 @@ function NavBar() {
                 as={Link}
                 to="/about"
                 onClick={() => updateExpanded(false)}
+                className={location === "/about" ? "active" : ""}
               >
                 <img src={User} alt="User"/> About
               </Nav.Link>
@@ -70,6 +72,7 @@ function NavBar() {
                 as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
+                className={location === "/project" ? "active" : ""}
               >
                 <img src={project} alt="project"/>
                 Projects
@@ -81,6 +84,7 @@ function NavBar() {
                 as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
+                className={location === "/resume" ? "active" : ""}
               >
                 <img src={resume} alt="resume"/> Resume
               </Nav.Link>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/ab.PNG";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -65,7 +65,7 @@ function Home2() {
               Feel free to <span className="purple">connect </span>with me
             </p>
             <p>
-              Mobile and Whatsapp Number: <b><a href="tel:+923046875472">+923046875472</a></b>
+              Mobile and Whatsapp Number: <b><a class="purple" href="tel:+923046875472">+923046875472</a></b>
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
