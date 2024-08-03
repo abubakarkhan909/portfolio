@@ -19,11 +19,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function AppContent() {
   const location = useLocation();
-  
-
   return (
     <>
-      
       <Navbar location={location.pathname}/>
       <ScrollToTop />
       <Routes>
