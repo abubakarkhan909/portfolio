@@ -21,7 +21,7 @@ function Projects() {
             <ProjectCard
               imgPath={images.loadkaro}
               isBlog={false}
-              title="Login/SignUp and Firebase"
+              title="LoadKaro"
               description="Loadkaro offers a seamless platform for users to book and transport their goods from one location to another. It provides a reliable pick-and-drop service for various items, ensuring secure and efficient delivery. The website is built using React.js, Redux Toolkit, Material UI, JSX, and CSS3 for a modern and responsive user experience."
               ghLink="https://github.com/abubakarkhan909/loadkaro"
               demoLink="https://dev.loadkaro.com/"
