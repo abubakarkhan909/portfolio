@@ -9,6 +9,7 @@ import foodpanda from "../../Assets/Projects/foodpanda.png";
 import pak from "../../Assets/Projects/pk.png";
 import rawal from "../../Assets/Projects/rawal.png";
 import sugr from "../../Assets/Projects/sugr.png";
+import loadkaro from '../../Assets/Projects/loadkaro.png'
 
 const images = {
     login,
@@ -21,7 +22,8 @@ const images = {
     foodpanda,
     pak,
     rawal,
-    sugr
+    sugr,
+    loadkaro
   };
   
   export default images;

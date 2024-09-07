@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import images from './ProjectImgs'
+import images from './ProjectImgs' 
 
 
 function Projects() {
@@ -17,6 +17,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={images.loadkaro}
+              isBlog={false}
+              title="Login/SignUp and Firebase"
+              description="Loadkaro offers a seamless platform for users to book and transport their goods from one location to another. It provides a reliable pick-and-drop service for various items, ensuring secure and efficient delivery. The website is built using React.js, Redux Toolkit, Material UI, JSX, and CSS3 for a modern and responsive user experience."
+              ghLink="https://github.com/abubakarkhan909/loadkaro"
+              demoLink="https://dev.loadkaro.com/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={images.login}
