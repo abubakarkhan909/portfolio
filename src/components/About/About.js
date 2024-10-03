@@ -6,11 +6,13 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import Skills from "./Skills";
 
 function About() {
   return (
+    <>
     <Container fluid className="about-section">
-      <Particle />
+    
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
@@ -34,6 +36,15 @@ function About() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
+          
+      </Container>
+    </Container>
+       
+        <Skills/>
+      <Container fluid className="about-section">
+        
+        <Container>
+       
         <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
         </h1>
@@ -44,10 +55,10 @@ function About() {
           <strong className="purple">Tools</strong> I use
         </h1>
         <Toolstack />
-
-       
-      </Container>
-    </Container>
+  
+        </Container>
+        </Container>
+        </>
   );
 }
 

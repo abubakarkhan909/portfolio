@@ -35,7 +35,6 @@ function ResumeNew() {
           <Document file={pdf} className="resumeinit d-block justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
             <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
-            <Page pageNumber={3} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
 
