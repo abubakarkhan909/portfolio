@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import Skills from "../About/Skills";
+import HeadingAnimation from "./HeadingAnimation";
 
 function Home() {
   return (
@@ -26,8 +27,9 @@ function Home() {
                 <strong className="main-name">  Muhammad Abubakar</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
+             
+              <div className="headinganimated">
+                <HeadingAnimation/> 
               </div>
             </Col>
 

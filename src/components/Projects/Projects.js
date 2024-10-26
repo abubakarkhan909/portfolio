@@ -47,7 +47,15 @@ function Projects() {
               demoLink="https://mypetbond.com/"
             />
           </Col>
-
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={images.saraai}
+              isBlog={false}
+              title="Saraai Realestate"
+              description="Saraai reimagining how you buy, sell and rent. It’s now easir to get into a place you love. So let’s do this, with Saraai."
+              demoLink="https://saraai.ae/"              
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={images.youtube}
@@ -65,6 +73,15 @@ function Projects() {
               title="Katora Ecommerece Theme"
               description="Katora Shopping Template offers customizable e-commerce templates with various styles, SEO-friendly features, and multi-language support. Easy to use and regularly updated for a dynamic shopping site."
               demoLink="https://themeforest.net/item/katora-bootstrap-multipurpose-shopping-template/24758698?s_rank=6"              
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={images.kundol}
+              isBlog={false}
+              title="kundol Ecommerece Theme"
+              description="kundol Shopping Template offers customizable e-commerce templates with various styles, SEO-friendly features, and multi-language support. Easy to use and regularly updated for a dynamic shopping site."
+              demoLink="https://themeforest.net/item/kundol-bootstrap-multipurpose-shopping-template/27568834?srsltid=AfmBOoqju6FMI_aHet_lSHjm-i18ZOJ39P-0aDNrbChLA25cV6plBxyU"              
             />
           </Col>
          

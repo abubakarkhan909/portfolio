@@ -10,6 +10,7 @@ import pak from "../../Assets/Projects/pk.png";
 import rawal from "../../Assets/Projects/rawal.png";
 import sugr from "../../Assets/Projects/sugr.png";
 import loadkaro from '../../Assets/Projects/loadkaro.png'
+import saraai from '../../Assets/Projects/saraai.png'
 
 const images = {
     login,
@@ -23,7 +24,8 @@ const images = {
     pak,
     rawal,
     sugr,
-    loadkaro
+    loadkaro,
+    saraai
   };
   
   export default images;
