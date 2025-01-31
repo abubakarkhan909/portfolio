@@ -17,7 +17,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={images.remax}
+              isBlog={false}
+              title="Remax"
+              description="Developed RE/MAX Egypt, a real estate website built with JavaScript, CSS, and Laravel, providing a seamless property search experience. As part of the world's largest real estate network, this platform helps users find their perfect property in Egypt with ease."
+              demoLink="https://saabsoftmarketing.com/remax.egy/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={images.loadkaro}
               isBlog={false}
