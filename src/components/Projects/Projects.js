@@ -26,7 +26,7 @@ function Projects() {
               demoLink="https://saabsoftmarketing.com/remax.egy/"
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col md={4} className="project-card"> 
             <ProjectCard
               imgPath={images.loadkaro}
               isBlog={false}
